@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tide-watch-updated/static/css/main.ab38bd19.chunk.css",
+    "main.js": "/tide-watch-updated/static/js/main.797f2a4d.chunk.js",
+    "main.js.map": "/tide-watch-updated/static/js/main.797f2a4d.chunk.js.map",
+    "runtime-main.js": "/tide-watch-updated/static/js/runtime-main.7d7c9447.js",
+    "runtime-main.js.map": "/tide-watch-updated/static/js/runtime-main.7d7c9447.js.map",
+    "static/js/2.c7e97122.chunk.js": "/tide-watch-updated/static/js/2.c7e97122.chunk.js",
+    "static/js/2.c7e97122.chunk.js.map": "/tide-watch-updated/static/js/2.c7e97122.chunk.js.map",
+    "static/js/3.303e97b0.chunk.js": "/tide-watch-updated/static/js/3.303e97b0.chunk.js",
+    "static/js/3.303e97b0.chunk.js.map": "/tide-watch-updated/static/js/3.303e97b0.chunk.js.map",
+    "index.html": "/tide-watch-updated/index.html",
+    "static/css/main.ab38bd19.chunk.css.map": "/tide-watch-updated/static/css/main.ab38bd19.chunk.css.map",
+    "static/js/2.c7e97122.chunk.js.LICENSE.txt": "/tide-watch-updated/static/js/2.c7e97122.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d7c9447.js",
+    "static/js/2.c7e97122.chunk.js",
+    "static/css/main.ab38bd19.chunk.css",
+    "static/js/main.797f2a4d.chunk.js"
+  ]
+}
