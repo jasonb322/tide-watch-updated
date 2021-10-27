@@ -22,6 +22,18 @@ export const TideDiv = styled.div`
   color: #314763;
 }
 
+.refresh-button {
+  font-family: 'Major Mono Display', monospace;
+  border-style: solid;
+  border-radius: 0.75em;
+  border-color: #314763;
+  padding: 1em;
+  text-transform: lowercase;
+  background-color: #d9e9ff;
+  max-width: 380px;
+  color: #314763;
+}
+
 .locationStats h4 {
   margin: 0.1em;
 }

@@ -8,13 +8,20 @@ import Temps from './Temps'
 import { TideDiv } from './tideStyle'
 
 function TideWatch() {
+
+  const pageRefresh = () => {
+    window.location.reload(false);
+  }
+
   return (
     <TideDiv>
       <div className='tideBody'>
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
+        <button className='refresh-button' onClick={pageRefresh}>Refresh</button>
       </div>
+      
     </TideDiv>
   );
 }
