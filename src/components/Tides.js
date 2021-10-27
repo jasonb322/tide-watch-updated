@@ -188,10 +188,10 @@ const Tides = () => {
     <div className='tides'>
       <br />
       <h2>{currentDate}</h2>
-      <h4>{tide1Type} {tide1}</h4>
+      <h4>{tide1Type ? tide1Type : "Loading . . . "} {tide1}</h4>
       <h4>{tide2Type} {tide2}</h4>
       <h4>{tide3Type} {tide3}</h4>
-      <h4>{} {tide4.includes('AM') ? "": tide4Type + " " + tide4}</h4>
+      <h4>{tide4.includes('AM') ? "": tide4Type + " " + tide4}</h4>
     </div>
   )
 }

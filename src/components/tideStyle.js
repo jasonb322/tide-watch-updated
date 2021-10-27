@@ -17,17 +17,18 @@ export const TideDiv = styled.div`
   margin: 20px auto;
   padding: 0px 10px 20px 10px;
   text-transform: lowercase;
-  max-width: 380px;
+  max-width: 350px;
   background-color: #b3d5ff;
   color: #314763;
 }
 
 .refresh-button {
   font-family: 'Major Mono Display', monospace;
+  font-weight: bold;
   border-style: solid;
   border-radius: 0.75em;
   border-color: #314763;
-  padding: 1em;
+  padding: 0.85em;
   text-transform: lowercase;
   background-color: #d9e9ff;
   max-width: 380px;
