@@ -17,7 +17,7 @@ export const TideDiv = styled.div`
   margin: 20px auto;
   padding: 0px 10px 20px 10px;
   text-transform: lowercase;
-  max-width: 350px;
+  max-width: 360px;
   background-color: #b3d5ff;
   color: #314763;
 }
