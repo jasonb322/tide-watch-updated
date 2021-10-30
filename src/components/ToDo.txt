@@ -1,3 +1,0 @@
-I have the GitHub repository made.
-Devleoper build seems to be working.
-Still need to make the deployment build and then get all that shit sorted out.

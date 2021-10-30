@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import TideWatch from './components/TideWatch';
+import TideWatchApp from './components/TideWatchApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <TideWatch />
+    <TideWatchApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

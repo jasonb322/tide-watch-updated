@@ -5,6 +5,7 @@
 import Location from './Location'
 import Tides from './Tides'
 import Temps from './Temps'
+import WindData from './WindData'
 import { TideDiv } from './tideStyle'
 
 function TideWatch() {
@@ -19,6 +20,7 @@ function TideWatch() {
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
+        <WindData />
         <button className='refresh-button' onClick={pageRefresh}>Refresh</button>
       </div>
       
