@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tide-watch-updated/static/css/main.ab38bd19.chunk.css",
-    "main.js": "/tide-watch-updated/static/js/main.96d4f0a4.chunk.js",
-    "main.js.map": "/tide-watch-updated/static/js/main.96d4f0a4.chunk.js.map",
+    "main.js": "/tide-watch-updated/static/js/main.32cdfede.chunk.js",
+    "main.js.map": "/tide-watch-updated/static/js/main.32cdfede.chunk.js.map",
     "runtime-main.js": "/tide-watch-updated/static/js/runtime-main.7d7c9447.js",
     "runtime-main.js.map": "/tide-watch-updated/static/js/runtime-main.7d7c9447.js.map",
     "static/js/2.c7e97122.chunk.js": "/tide-watch-updated/static/js/2.c7e97122.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7d7c9447.js",
     "static/js/2.c7e97122.chunk.js",
     "static/css/main.ab38bd19.chunk.css",
-    "static/js/main.96d4f0a4.chunk.js"
+    "static/js/main.32cdfede.chunk.js"
   ]
 }
