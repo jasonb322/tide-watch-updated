@@ -46,7 +46,7 @@ const WindData = () => {
     return (
         <div>
             <h4>Wind:</h4>
-            <h4>{ windDir ? displayWindDirAsString(windDir) : 'Data Not Available' } @ { windSpeed ? windSpeed : ''} mph</h4>
+            <h4>{ (windDir && windSpeed) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Data Not Available' }</h4>
         </div>
     )
 }
