@@ -4,13 +4,25 @@ import getData from './getData';
 
 
 const WindData = () => {
-    const [windDir, setWindDir] = useState(null);
+    const [windDir, setWindDir] = useState(0);
     const [windSpeed, setWindSpeed] = useState(null);
 
+    // .length of windDirArray = 17
+    const windDirArray = ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW","N"]
+    
+
+    const displayWindDirAsString = (rawWindDir) => {
+        let windAsString = ''
+        const windSectorIndex = Math.round(rawWindDir/22.5)
+        if (rawWindDir < 1) {
+            windAsString = 'N'
+        } else {
+            windAsString = windDirArray[windSectorIndex]
+        }
+        return windAsString
+    }
+
     const fetchWindData = async () => {
-        // my stats
-        // const latOceanAcres = '39.7435'
-        // const lonOceanAcres = '-74.281'
 
         const lat = '39.3643'
         const lon = '-74.4229'
@@ -33,8 +45,8 @@ const WindData = () => {
 
     return (
         <div>
-            <h4>Wind Direction: { windDir ? windDir : '...'}˚</h4>
-            <h4>Wind Speed: { windSpeed ? windSpeed : '...'} mph</h4>
+            <h4>Wind:</h4>
+            <h4>{ windDir ? displayWindDirAsString(windDir) : 'Data Not Available' } @ { windSpeed ? windSpeed : ''} mph</h4>
         </div>
     )
 }
