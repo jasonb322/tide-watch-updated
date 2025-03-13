@@ -43,12 +43,12 @@ const WindData = () => {
         fetchWindData().catch((err) => console.log(err))
     }, [])
 
-    return (
-        <div>
-            <h4>Wind:</h4>
-            <h4>{ (windDir && windSpeed) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Data Unavailable' }</h4>
-        </div>
-    )
+    // return (
+    //     <div>
+    //         <h4>Wind:</h4>
+    //         <h4>{ (windDir && windSpeed) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Data Unavailable' }</h4>
+    //     </div>
+    // )
 }
 
 export default WindData
