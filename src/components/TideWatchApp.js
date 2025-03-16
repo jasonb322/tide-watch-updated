@@ -20,7 +20,7 @@ function TideWatch() {
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
-        <WindData />
+        {/* <WindData /> */}
         <button className='refresh-button' onClick={pageRefresh}>Refresh</button>
       </div>
       
