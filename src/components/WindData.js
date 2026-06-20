@@ -53,7 +53,8 @@ const WindData = () => {
             <h4>
                 {
                     (windDir !== null && windSpeed !== null)
-                        ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph \n(gusting ${windGust} mph)`
+                        ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph 
+                        (gust: ${windGust} mph)`
                         : 'Data Unavailable'
                 }
             </h4>
