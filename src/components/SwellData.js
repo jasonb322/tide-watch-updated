@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const WaveData = () => {
+const SwellData = () => {
   const [waveHeight, setWaveHeight] = useState(null);
   const [waveDir, setWaveDir] = useState(null);
   const [wavePeriod, setWavePeriod] = useState(null);
@@ -43,4 +43,4 @@ const WaveData = () => {
   );
 };
 
-export default WaveData;
+export default SwellData;
