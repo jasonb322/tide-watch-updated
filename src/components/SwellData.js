@@ -52,7 +52,7 @@ const SwellData = () => {
 			</p>
 
 			<p>
-				Direction: {waveDirString !== null ? `${waveDirString}°` : "Loading..."}
+				Direction: {waveDirString !== null ? `${waveDirString}` : "Loading..."}
 			</p>
 
 			<p>
