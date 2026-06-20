@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { convertAngleToString } from "./convertAngleToString";
 
 const SwellData = () => {
 	const [waveHeight, setWaveHeight] = useState(null);
@@ -13,7 +14,8 @@ const SwellData = () => {
 		const data = await res.json();
 
 		// IMPORTANT: index 0 = current forecast hour
-		const i = 0;
+		const currentHour = new Date().getHours();
+		const i = currentHour;
 
 		setWaveHeight(data.hourly.wave_height[i]);
 		setWaveDir(data.hourly.wave_direction[i]);
@@ -25,22 +27,7 @@ const SwellData = () => {
 	}, []);
 
 
-	const swellDirArray = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"]
-
-
-	const displaySwellDirAsString = (waveDir) => {
-		let waveDirAsString = ''
-		const waveSectorIndex = Math.round(waveDir / 22.5)
-		if (waveDir < 1) {
-			waveDirAsString = 'N'
-		} else {
-			waveDirAsString = swellDirArray[waveSectorIndex]
-		}
-		return waveDirAsString
-	}
-
-	const waveDirString = displaySwellDirAsString(waveDir)
-
+	const waveDirString = convertAngleToString(waveDir)
 
 	return (
 		<div>
