@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/tide-watch-updated/static/css/main.18727ccd.chunk.css",
-    "main.js": "/tide-watch-updated/static/js/main.01acac55.chunk.js",
-    "main.js.map": "/tide-watch-updated/static/js/main.01acac55.chunk.js.map",
+    "main.js": "/tide-watch-updated/static/js/main.c893d9b7.chunk.js",
+    "main.js.map": "/tide-watch-updated/static/js/main.c893d9b7.chunk.js.map",
     "runtime-main.js": "/tide-watch-updated/static/js/runtime-main.79ad6ddf.js",
     "runtime-main.js.map": "/tide-watch-updated/static/js/runtime-main.79ad6ddf.js.map",
-    "static/js/2.c17fc9a1.chunk.js": "/tide-watch-updated/static/js/2.c17fc9a1.chunk.js",
-    "static/js/2.c17fc9a1.chunk.js.map": "/tide-watch-updated/static/js/2.c17fc9a1.chunk.js.map",
+    "static/js/2.32e9caaa.chunk.js": "/tide-watch-updated/static/js/2.32e9caaa.chunk.js",
+    "static/js/2.32e9caaa.chunk.js.map": "/tide-watch-updated/static/js/2.32e9caaa.chunk.js.map",
     "static/js/3.12840315.chunk.js": "/tide-watch-updated/static/js/3.12840315.chunk.js",
     "static/js/3.12840315.chunk.js.map": "/tide-watch-updated/static/js/3.12840315.chunk.js.map",
     "index.html": "/tide-watch-updated/index.html",
     "static/css/main.18727ccd.chunk.css.map": "/tide-watch-updated/static/css/main.18727ccd.chunk.css.map",
-    "static/js/2.c17fc9a1.chunk.js.LICENSE.txt": "/tide-watch-updated/static/js/2.c17fc9a1.chunk.js.LICENSE.txt"
+    "static/js/2.32e9caaa.chunk.js.LICENSE.txt": "/tide-watch-updated/static/js/2.32e9caaa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.79ad6ddf.js",
-    "static/js/2.c17fc9a1.chunk.js",
+    "static/js/2.32e9caaa.chunk.js",
     "static/css/main.18727ccd.chunk.css",
-    "static/js/main.01acac55.chunk.js"
+    "static/js/main.c893d9b7.chunk.js"
   ]
 }
