@@ -1,26 +1,12 @@
 import { useState, useEffect } from 'react'
 import getData from './getData';
+import { convertAngleToString } from './convertAngleToString';
 
 
 const WindData = () => {
     const [windDir, setWindDir] = useState(0);
     const [windSpeed, setWindSpeed] = useState(null);
     const [windGust, setWindGust] = useState(null);
-
-    // .length of windDirArray = 17
-    const windDirArray = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"]
-
-
-    const displayWindDirAsString = (rawWindDir) => {
-        let windAsString = ''
-        const windSectorIndex = Math.round(rawWindDir / 22.5)
-        if (rawWindDir < 1) {
-            windAsString = 'N'
-        } else {
-            windAsString = windDirArray[windSectorIndex]
-        }
-        return windAsString
-    }
 
     const fetchWindData = async () => {
 
@@ -30,11 +16,13 @@ const WindData = () => {
         const data = await getData(windURL)
 
         // first hourly forecast point
-        const currentWindDir = data.hourly.winddirection_10m[0]
-        const currentWindSpeed = data.hourly.windspeed_10m[0]
-        const currentGust = data.hourly.windgusts_10m[0]
 
+        const currentHour = new Date().getHours();
+		const i = currentHour;
 
+        const currentWindDir = data.hourly.winddirection_10m[i]
+        const currentWindSpeed = data.hourly.windspeed_10m[i]
+        const currentGust = data.hourly.windgusts_10m[i]
 
         setWindDir(currentWindDir)
         setWindSpeed(Math.round(currentWindSpeed))
@@ -43,7 +31,7 @@ const WindData = () => {
         return data
     }
 
-    const windDirString = displayWindDirAsString(windDir)
+    const windDirString = convertAngleToString(windDir)
 
 
     useEffect(() => {
