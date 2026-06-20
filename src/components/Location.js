@@ -18,6 +18,8 @@ const Location = () => {
     setLong(data.metadata['lon'])
   }
 
+  const localTime = new Date().toLocaleTimeString();
+
   useEffect(() => {
     setLocationData()
   }, [])
@@ -28,9 +30,10 @@ const Location = () => {
       <h1>{name}</h1>
       <h2>Tides and Temps</h2>
       <div className='locationStats'>
-        <h4>Lat: {lat}</h4>
-        <h4>Long: {long}</h4>
+        {/* <h4>Lat: {lat}</h4>
+        <h4>Long: {long}</h4> */}
         <h4>NOAA Station Id: {location}</h4>
+        <p>Updated: {localTime}</p>
       </div>
       
     </div>
