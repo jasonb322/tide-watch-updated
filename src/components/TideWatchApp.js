@@ -7,6 +7,7 @@ import Tides from './Tides'
 import Temps from './Temps'
 import WindData from './WindData'
 import { TideDiv } from './tideStyle'
+import SwellData from './SwellData'
 
 function TideWatch() {
 
