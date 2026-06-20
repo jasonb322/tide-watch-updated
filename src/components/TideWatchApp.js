@@ -24,6 +24,7 @@ function TideWatch() {
         <WindData className='wind' />
         <SwellData className='swell' />
         <button className='refresh-button' onClick={pageRefresh}>Refresh</button>
+        <p>Developed by @jbahr_insta</p>
       </div>
       
     </TideDiv>
