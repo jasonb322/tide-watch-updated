@@ -56,7 +56,7 @@ const WindData = () => {
             <h4>
                 {
                     (windDir !== null && windSpeed !== null)
-                        ? windDirString + " @ " + windSpeed + " mph\n" + "Gust: " + windGust + "  mph"
+                        ? windDirString + " @ " + windSpeed + " mph\n" + "(Gust: " + windGust + "  mph)"
                         : 'Data Unavailable'
                 }
             </h4>
