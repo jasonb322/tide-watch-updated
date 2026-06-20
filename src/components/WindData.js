@@ -5,6 +5,7 @@ import getData from './getData';
 const WindData = () => {
     const [windDir, setWindDir] = useState(0);
     const [windSpeed, setWindSpeed] = useState(null);
+    const [windGust, setWindGust] = useState(null);
 
     // .length of windDirArray = 17
     const windDirArray = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW", "N"]
@@ -31,9 +32,13 @@ const WindData = () => {
         // first hourly forecast point
         const currentWindDir = data.hourly.winddirection_10m[0]
         const currentWindSpeed = data.hourly.windspeed_10m[0]
+        const currentGust = data.hourly.windgusts_10m[0]
+
+
 
         setWindDir(currentWindDir)
         setWindSpeed(Math.round(currentWindSpeed))
+        setWindGust(Math.round(currentGust))
 
         return data
     }
@@ -45,7 +50,13 @@ const WindData = () => {
     return (
         <div>
             <h4>Wind:</h4>
-            <h4>{(windDir != null && windSpeed != null) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Man, wind still broken :('}</h4>
+            <h4>
+                {
+                    (windDir !== null && windSpeed !== null)
+                        ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph \n(gusting ${windGust} mph)`
+                        : 'Data Unavailable'
+                }
+            </h4>
         </div>
     )
 }
