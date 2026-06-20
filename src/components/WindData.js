@@ -43,6 +43,9 @@ const WindData = () => {
         return data
     }
 
+    const windDirString = displayWindDirAsString(windDir)
+
+
     useEffect(() => {
         fetchWindData().catch((err) => console.log(err))
     }, [])
@@ -53,7 +56,7 @@ const WindData = () => {
             <h4>
                 {
                     (windDir !== null && windSpeed !== null)
-                        ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph ${"\n"}(gust: ${windGust} mph)`
+                        ? windDirString + " @ " + windSpeed + " mph\n" + "Gust: " + windGust + "  mph"
                         : 'Data Unavailable'
                 }
             </h4>
