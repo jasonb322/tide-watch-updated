@@ -24,20 +24,23 @@ const WindData = () => {
 
     const fetchWindData = async () => {
 
-        const lat = '39.3643'
-        const lon = '-74.4229'
-        const apiKey = openWeatherMapAPIKey
+    const windURL = 
+      'https://api.open-meteo.com/v1/forecast?latitude=39.35&longitude=-74.30&hourly=windspeed_10m,winddirection_10m,windgusts_10m&timezone=America/New_York'
 
-        const windURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
+    const data = await getData(windURL)
 
-        
-        const data = await getData(windURL)
+    // first hourly forecast point
+    const currentWindDir = data.hourly.winddirection_10m[0]
+    const currentWindSpeed = data.hourly.windspeed_10m[0]
 
-        setWindDir(data['current']['wind_deg'])
-        setWindSpeed(Math.round(data['current']['wind_speed']))
+    console.log(currentWindDir)
+    console.log(currentWindSpeed)
 
-        return data        
-    }
+    setWindDir(currentWindDir)
+    setWindSpeed(Math.round(currentWindSpeed))
+
+    return data
+}
 
     useEffect(() => {
         fetchWindData().catch((err) => console.log(err))
@@ -46,7 +49,7 @@ const WindData = () => {
     return (
         <div>
             <h4>Wind:</h4>
-            <h4>{ (windDir && windSpeed) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Data Unavailable' }</h4>
+            <h4>{ (windDir!=null && windSpeed!=null) ? `${displayWindDirAsString(windDir)} @ ${windSpeed} mph` : 'Man, wind still broken :(' }</h4>
         </div>
     )
 }
