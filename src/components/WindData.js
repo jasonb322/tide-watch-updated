@@ -53,13 +53,13 @@ const WindData = () => {
     return (
         <div>
             <h4>Wind:</h4>
-            <h4>
+            <p>
                 {
                     (windDir !== null && windSpeed !== null)
                         ? windDirString + " @ " + windSpeed + " mph\n" + "(Gust: " + windGust + "  mph)"
                         : 'Data Unavailable'
                 }
-            </h4>
+            </p>
         </div>
     )
 }
