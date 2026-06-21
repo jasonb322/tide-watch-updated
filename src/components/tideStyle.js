@@ -11,6 +11,7 @@ export const TideDiv = styled.div`
 
 .tideBody {
   font-family: Helvetica;
+  font-size: 1.5em;
   border-style: solid;
   border-width: 5px;
   border-radius: 1em;

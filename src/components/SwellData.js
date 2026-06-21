@@ -32,7 +32,7 @@ const SwellData = () => {
 	return (
 		<div>
 			<br />
-			<h4>Wave Conditions:</h4>
+			<h4>Swell:</h4>
 
 			<p>
 				Height: {waveHeight !== null ? `${Math.round(waveHeight * 3.28 * 100) / 100} ft` : "Loading..."}
