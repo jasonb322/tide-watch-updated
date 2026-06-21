@@ -47,7 +47,7 @@ h4 {
   margin: 0;
 }
 
-.air-temp {
+.temps {
   padding-bottom: 20px;
 }
 

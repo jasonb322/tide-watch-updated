@@ -43,7 +43,7 @@ const SwellData = () => {
 			</p>
 
 			<p>
-				Period: {wavePeriod !== null ? `${wavePeriod} s` : "Loading..."}
+				Period: {wavePeriod !== null ? `${wavePeriod} sec` : "Loading..."}
 			</p>
 		</div>
 	);

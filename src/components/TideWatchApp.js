@@ -18,9 +18,11 @@ function TideWatch() {
   return (
     <TideDiv>
       <div className='tideBody'>
+        <h4>Live Data</h4>
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
+        <h4>Predicted Data</h4>
         <WindData className='wind' />
         <SwellData className='swell' />
         <br />
