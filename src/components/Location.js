@@ -31,7 +31,6 @@ const Location = () => {
         {/* <h4>Lat: {lat}</h4>
         <h4>Long: {long}</h4> */}
         {/* <h4>NOAA Station Id: {location}</h4> */}
-        <p>Updated: {localTime}</p>
       </div>
       
     </div>
