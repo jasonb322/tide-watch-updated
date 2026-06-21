@@ -18,17 +18,16 @@ function TideWatch() {
   return (
     <TideDiv>
       <div className='tideBody'>
-        <h4>Live Data</h4>
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
-        <h4>Predicted Data</h4>
+        <h3>Wind & Wave Forecast</h3>
         <WindData className='wind' />
         <SwellData className='swell' />
         <br />
         <button className='refresh-button' onClick={pageRefresh}>Refresh</button>
         <br />
-        <p>Developed by @jbahr_insta</p>
+        <p>Brought to you by <a href="https://www.instagram.com/jbahr_insta/">@jbahr_insta</a></p>
       </div>
       
     </TideDiv>
