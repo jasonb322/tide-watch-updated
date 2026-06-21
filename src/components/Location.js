@@ -18,8 +18,6 @@ const Location = () => {
     setLong(data.metadata['lon'])
   }
 
-  const localTime = new Date().toLocaleTimeString();
-
   useEffect(() => {
     setLocationData()
   }, [])

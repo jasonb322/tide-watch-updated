@@ -10,7 +10,7 @@ import styled from 'styled-components'
 export const TideDiv = styled.div`
 
 .tideBody {
-  font-family: 'Major Mono Display', monospace;
+  font-family: Helvetica;
   border-style: solid;
   border-width: 5px;
   border-radius: 1em;

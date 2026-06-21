@@ -50,12 +50,6 @@ const Tides = () => {
   const tideURL = `https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=${formattedDate}&range=48&station=8534720&product=predictions&datum=STND&time_zone=lst_ldt&interval=hilo&units=english&format=json`
   // console.log(tideURL)
 
-  // TEST URL - See tide information returned from API ///////////////////////////////
-  // const testURL = 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?begin_date=20210611&range=48&station=8534720&product=predictions&datum=STND&time_zone=lst_ldt&interval=hilo&units=english&format=json'
-  // console.log(testURL)
-
-
-
   //===============================================================
   //
   // PREPARE TIDES FOR DISPLAY IN BROWSER
@@ -183,11 +177,13 @@ const Tides = () => {
     setTideData()
   })
 
+  const localTime = new Date().toLocaleTimeString();
 
   return (
     <div className='tides'>
       <br />
       <h2>{currentDate}</h2>
+      <h3>{"Updated: " + localTime}</h3>
       <h4>{tide1Type ? tide1Type : "Loading . . . "} {tide1}</h4>
       <h4>{tide2Type} {tide2}</h4>
       <h4>{tide3Type} {tide3}</h4>
