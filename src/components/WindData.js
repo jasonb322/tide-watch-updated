@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import getData from './getData';
-import { convertAngleToString } from './convertAngleToString';
+import getData from './methods/getData';
+import { convertAngleToString } from './methods/convertAngleToString';
 
 
 const WindData = () => {

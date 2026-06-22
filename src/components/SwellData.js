@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { convertAngleToString } from "./convertAngleToString";
+import { convertAngleToString } from "./methods/convertAngleToString";
 
 const SwellData = () => {
 	const [waveHeight, setWaveHeight] = useState(null);

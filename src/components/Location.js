@@ -1,4 +1,4 @@
-import getData from './getData'
+import getData from './methods/getData'
 import { useState, useEffect } from 'react'
 
 const Location = () => {
@@ -21,17 +21,20 @@ const Location = () => {
   useEffect(() => {
     setLocationData()
   }, [])
+
+  const localTime = new Date().toLocaleTimeString();
   
 
   return (
     <div className='location'>
       <h1>{name}</h1>
       <h2>Tides and Temps</h2>
-      <div className='locationStats'>
-        {/* <h4>Lat: {lat}</h4>
-        <h4>Long: {long}</h4> */}
-        {/* <h4>NOAA Station Id: {location}</h4> */}
-      </div>
+      <h3>{"Updated: " + localTime}</h3>
+      {/* <div className='locationStats'>
+        <h4>Lat: {lat}</h4>
+        <h4>Long: {long}</h4>
+        <h4>NOAA Station Id: {location}</h4>
+      </div> */}
       
     </div>
   )

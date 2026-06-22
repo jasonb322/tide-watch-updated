@@ -1,6 +1,6 @@
 /* Control functionality of the tide API call and return formatted tide times */
 
-import getData from "./getData"
+import getData from "./methods/getData"
 import { useState, useEffect } from 'react'
 
 const Tides = () => {
@@ -177,13 +177,10 @@ const Tides = () => {
     setTideData()
   })
 
-  const localTime = new Date().toLocaleTimeString();
-
   return (
     <div className='tides'>
       <br />
       <h2>{currentDate}</h2>
-      <h3>{"Updated: " + localTime}</h3>
       <h4>{tide1Type ? tide1Type : "Loading . . . "} {tide1}</h4>
       <h4>{tide2Type} {tide2}</h4>
       <h4>{tide3Type} {tide3}</h4>

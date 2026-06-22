@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import getData from './getData'
+import getData from './methods/getData'
 
 
 const Temps = () => {
