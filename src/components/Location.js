@@ -29,7 +29,7 @@ const Location = () => {
     <div className='location'>
       <h1>{name}</h1>
       <h2>Tides and Temps</h2>
-      <h3>{"Updated: " + localTime}</h3>
+      <h3>{"Live Conditions:\n " + localTime}</h3>
       {/* <div className='locationStats'>
         <h4>Lat: {lat}</h4>
         <h4>Long: {long}</h4>
