@@ -21,7 +21,7 @@ function TideWatch() {
         <Location />
         <Tides className='tides' />
         <Temps className='temps' />
-        <h2>Forecasted:</h2>
+        <h3>Forecasted</h3>
         <WindData className='wind' />
         <SwellData className='swell' />
         <br />
